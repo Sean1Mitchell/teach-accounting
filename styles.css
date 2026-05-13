@@ -4,30 +4,36 @@
 }
 
 :root {
-    --bg: hsl(0, 0%, 15%);
-    --secondary-bg: hsl(191, 20%, 10%);
+    /* COLLECTIVE BACKGROUND COLORS */
+    --bg: hsl(0, 0%, 0%);
+    --secondary-bg: hsl(191, 10%, 10%);
+
+    /* BORDER COLORS */
     --border: hsl(0, 0%, 30%);
     --secondary-border: hsl(191, 100%, 60%);
     --third-border: hsl(0, 0%, 10%);
     --fourth-border: hsl(0, 0%, 100%);
+
+    /* SINGLE BACKGROUND COLORS */
     --accent: hsl(191, 100%, 60%);
     --secondary-accent: hsl(0, 0%, 100%);
 
+    /* HOVER COLORS */
     --hover-bg: hsl(191, 100%, 60%);
     --hover-border: hsl(191, 100%, 60%);
     --hover-secondary-border: hsl(0, 0%, 100%);
     --hover-main-text: hsl(0, 0%, 100%);
     --hover-secondary-text: hsl(0, 0%, 80%);
 
+    /* TEXT COLORS */
     --main-text: hsl(0, 0%, 100%);
     --secondary-text: hsl(0, 0%, 80%);
     --third-text: hsl(0, 0%, 60%);
     --fourth-text: hsl(0, 0%, 10%);
 
+    /* PROGRESS COLORS */
     --progress-container: hsl(220, 29%, 20%);
     --progress-bar: hsl(198, 76%, 47%);
-
-    --gradient: linear-gradient(135deg, hsl(191, 100%, 60%), hsl(0, 0%, 100%));
 }
 
 html {
