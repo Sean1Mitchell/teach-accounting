@@ -3,9 +3,12 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .container {
     display: flex;
-    min-height: 100vh;
 }
 
 /* Header */
@@ -23,6 +26,7 @@ header {
 
     left: 0;
     transition: left 0.5s ease;
+    justify-content: space-between;
 }
 
 /* Move entire header */
@@ -34,6 +38,43 @@ header.active {
     display: flex;
     flex-direction: row;
     gap: 20px;
+}
+
+.right-side {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-right: 40px;
+}
+
+.right-side p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid lightseagreen;
+    border-radius: 15px;
+    width: 100px;
+    cursor: pointer;
+    transition: 0.5s;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 0 5px 0;
+}
+
+.right-side a {
+    color: black;
+}
+
+.right-side a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.right-side p:hover {
+    background-color: lightseagreen;
+    color: white;
+    box-shadow: 0 0 15px lightseagreen;
+    border: 2px solid lightseagreen;
 }
 
 .menu-btn {
@@ -113,7 +154,7 @@ header.active {
 .main-content {
     width: 100%;
     max-width: 1400px;
-    margin-top: 80px;
+    margin-top: 55px;
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
@@ -220,7 +261,7 @@ header.active {
 .portion3 {
     display: flex;
     flex-direction: row;
-    margin-top: 50px;
+    margin-top: 30px;
     justify-content: space-between;
 }
 
@@ -295,8 +336,8 @@ header.active {
 
 .progress-container {
     width: 100%;
-    height: 10px;
-    background-color: #dcdcdc;
+    height: 8px;
+    background-color: #1E3A5F;
     border-radius: 999px;
     overflow: hidden;
     margin-top: 10px;
@@ -305,7 +346,7 @@ header.active {
 .progress-bar {
     width: 50%;
     height: 100%;
-    background-color: #1e1e1e;
-    border-radius: 999px;
+    background-color: #3B82F6;
+    border-radius: 0;
     transition: width 0.3s ease;
 }
