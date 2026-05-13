@@ -4,7 +4,8 @@
 }
 
 :root {
-    --bg: hsl(235, 66%, 5%);
+    --bg: hsl(235, 40%, 5%);
+    --secondary-bg: hsl(220, 29%, 20%);
     --border: hsl(0, 0%, 30%);
     --secondary-border: hsl(191, 100%, 60%);
     --third-border: hsl(0, 0%, 10%);
@@ -111,7 +112,7 @@ header.active {
     top: 20px;
     left: 20px;
     z-index: 1100;
-    padding: 13px;
+    padding: 9px;
     margin-top: 10px;
     border: none;
     background-color: var(--accent);
@@ -242,17 +243,17 @@ header.active {
 }
 
 .welcome-back {
-    color: hsl(0, 0%, 80%);
+    color: var(--third-text);
     font-weight: bold;
 }
 
 .continue {
-    color: hsl(0, 0%, 100%);
+    color: var(--main-text);
     font-weight: bold;
 }
 
 .note {
-    color: hsl(0, 0%, 80%);
+    color: var(--third-text);
     font-weight: bold;
 }
 
