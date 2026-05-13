@@ -1,0 +1,311 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    position: fixed;
+    right: 0;
+    margin-left: 20px;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+
+    background-color: transparent;
+    z-index: 900;
+
+    left: 0;
+    transition: left 0.5s ease;
+}
+
+/* Move entire header */
+header.active {
+    left: 310px; /* Sidebar width + spacing */
+}
+
+.left-side {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.menu-btn {
+    top: 20px;
+    left: 20px;
+    z-index: 1100;
+    padding: 10px 10px;
+    border: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 5px;
+    border: 2px solid #1e1e1e;
+    width: 500px;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    padding-left: 8px;
+    font-size: 16px;
+}
+
+.search-icon {
+    width: 20px;
+    height: 20px;
+    color: #666;
+    padding-left: 8px;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -300px; /* Hidden off screen */
+    width: 250px;
+    height: 100vh;
+    background-color: #1e1e1e;
+    color: white;
+    padding: 20px;
+    transition: left 0.5s ease;
+    z-index: 1000;
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+.sidebar-divider {
+    margin: 15px 0;
+    border: none;
+    border-top: 1px solid #1e1e1e;
+}
+
+.sidebar-content div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.sidebar-content svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* MAIN CONTENT SECTION */
+
+.main-content {
+    width: 100%;
+    max-width: 1400px;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+.main-content svg {
+    width: 20px;
+    height: 20px;
+}
+
+.portion1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 30px;
+
+    border-radius: 12px;
+    background-color: lightseagreen;
+}
+
+.portion1-right-side {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.continue-learning-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 10px 10px;
+    border: none;
+    border-radius: 10px;
+
+    background-color: #1e1e1e;
+    color: white;
+    font-weight: bold;
+    border: 2px solid #1e1e1e;
+
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.continue-learning-btn:hover {
+    background-color: transparent;
+    color: #1e1e1e;
+    border: 2px solid #1e1e1e;
+    transition: 0.5s ease;
+}
+
+.take-a-quiz-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 10px 10px;
+    border: none;
+    border-radius: 10px;
+
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border: 2px solid white;
+
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.take-a-quiz-btn:hover {
+    background-color: transparent;
+    color: #1e1e1e;
+    border: 2px solid #1e1e1e;
+    transition: 0.5s ease;
+}
+
+.portion2 {
+    display: flex;
+    flex-direction: row;
+    gap: 55px;
+    margin-top: 30px;
+}
+
+.portion2 div {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 15px;
+    border: 2px solid #1e1e1e;
+    width: 300px;
+}
+
+.portion2 div h3 {
+    padding: 0;
+    margin: 0;
+}
+
+.portion2 div p {
+    padding: 0;
+    margin: 0;
+}
+
+.portion3 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+.portion3-your-topics {
+    display: flex;
+    flex-direction: column;
+}
+
+.portion3-your-topics h3, .portion3-your-topics p {
+    margin: 0;
+    padding: 0;
+}
+
+.portion3-view-all a {
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #1e1e1e;
+    font-weight: bold;
+    border: 2px solid lightseagreen;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.portion3-view-all a:hover {
+    border: 2px solid transparent;
+    background-color: lightseagreen;
+    border-radius: 15px;
+    color: white;
+    transition: 0.5s ease;
+    padding: 10px;
+}
+
+.portion4 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    justify-content: center;
+    column-gap: 53px;
+    row-gap: 20px;
+}
+
+.topic {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #1e1e1e;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.topic h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.topic p {
+    margin: 0;
+    padding: 20px 0px 20px 0px;
+}
+
+.measurement {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.progress-container {
+    width: 100%;
+    height: 10px;
+    background-color: #dcdcdc;
+    border-radius: 999px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.progress-bar {
+    width: 50%;
+    height: 100%;
+    background-color: #1e1e1e;
+    border-radius: 999px;
+    transition: width 0.3s ease;
+}
