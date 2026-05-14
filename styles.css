@@ -355,9 +355,9 @@ header.active {
 /* PORTION 2 */
 
 .portion2 {
-    display: flex;
-    flex-direction: row;
-    gap: 55px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
+    gap: 53px;
     margin-top: 30px;
 }
 
@@ -513,7 +513,7 @@ header.active {
     }
 
     .search-bar {
-        width: 300px;
+        width: 100%;
     }
 
     .right-side {
@@ -523,7 +523,7 @@ header.active {
     .portion1 {
         display: flex;
         flex-direction: column;
-        width: 340px;
+        width: 100%;
     }
 
     .portion2 {
@@ -533,13 +533,14 @@ header.active {
     }
 
     .portion2 div {
-        width: 350px;
+        width: 100%;
     }
 
     .portion3 {
         display: flex;
         flex-direction: column;
         gap: 10px;
+        width: 100%;
     }
 
     .portion4 {
