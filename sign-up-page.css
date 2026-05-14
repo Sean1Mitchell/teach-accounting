@@ -119,14 +119,26 @@ body {
 }
 
 #email,
-#password {
+#password,
+#first-name,
+#last-name {
     width: 500px;
     height: 30px;
     margin: 8px 0 8px 0;
 }
 
+#date-of-birth {
+    width: 500px;
+    height: 60px;
+    padding-bottom: 10px;
+    margin: 8px 0 8px 0;
+}
+
 .form-group-email input,
-.form-group-password input {
+.form-group-password input,
+.form-group-first-name input,
+.form-group-last-name input,
+.form-group-DOB input {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -159,27 +171,17 @@ body {
     justify-content: space-between;
 }
 
-.sign-up {
+.sign-in {
     color: var(--main-text);
     text-decoration: none;
 }
 
-.sign-up a {
+.sign-in a {
     color: var(--accent);
     text-decoration: none;
 }
 
-.sign-up a:visited {
-    color: var(--accent);
-    text-decoration: none;
-}
-
-.forgotten-password a {
-    color: var(--accent);
-    text-decoration: none;
-}
-
-.forgotten-password a:visited {
+.sign-in a:visited {
     color: var(--accent);
     text-decoration: none;
 }
