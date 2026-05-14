@@ -184,6 +184,24 @@ body {
     text-decoration: none;
 }
 
+/* TAKE THIS AWAY AFTER DEVELOPMENT */
+.home {
+    margin-bottom: 20px;
+}
+
+.home a {
+    text-decoration: none;
+    color: var(--main-text);
+    font-weight: bold;
+}
+
+.home a:visited {
+    text-decoration: none;
+    color: var(--main-text);
+}
+/* TAKE THIS AWAY AFTER DEVELOPMENT */
+
+
 @media (max-width: 600px) {
     .container {
         width: 330px;
