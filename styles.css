@@ -499,3 +499,40 @@ header.active {
     border-radius: 0;
     transition: width 0.3s ease;
 }
+
+@media (max-width: 431px) {
+
+    header {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .search-bar {
+        width: 300px;
+    }
+
+    .portion1 {
+        display: flex;
+        flex-direction: column;
+        margin-top: 80px;
+    }
+
+    .portion2 {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .portion3 {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .portion4 {
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: 300px;
+    }
+}
