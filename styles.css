@@ -508,20 +508,32 @@ header.active {
         margin-left: 0;
     }
 
+    header.active {
+        left: 450px
+    }
+
     .search-bar {
         width: 300px;
+    }
+
+    .right-side {
+        display: none;
     }
 
     .portion1 {
         display: flex;
         flex-direction: column;
-        margin-top: 80px;
+        width: 340px;
     }
 
     .portion2 {
         display: flex;
         flex-direction: column;
         gap: 10px;
+    }
+
+    .portion2 div {
+        width: 350px;
     }
 
     .portion3 {
@@ -533,6 +545,10 @@ header.active {
     .portion4 {
         display: flex;
         flex-direction: column;
-        grid-template-columns: 300px;
+    }
+
+    .grid-layout {
+        display: flex;
+        flex-direction: column;
     }
 }
