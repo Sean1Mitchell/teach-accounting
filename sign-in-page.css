@@ -183,3 +183,29 @@ body {
     color: var(--accent);
     text-decoration: none;
 }
+
+@media (max-width: 600px) {
+    .container {
+        width: 330px;
+    }
+
+    .signin-header {
+        margin-bottom: 5px;
+    }
+
+    #email,
+    #password {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .submit-btn {
+        width: 250px;
+    }
+
+    .other {
+        display: flex;
+        flex-direction: column;
+    }
+
+}

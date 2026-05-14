@@ -121,16 +121,10 @@ body {
 #email,
 #password,
 #first-name,
-#last-name {
-    width: 500px;
-    height: 30px;
-    margin: 8px 0 8px 0;
-}
-
+#last-name,
 #date-of-birth {
     width: 500px;
-    height: 60px;
-    padding-bottom: 10px;
+    height: 30px;
     margin: 8px 0 8px 0;
 }
 
@@ -184,4 +178,28 @@ body {
 .sign-in a:visited {
     color: var(--accent);
     text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 330px;
+    }
+
+    .signin-header {
+        margin-bottom: 5px;
+    }
+
+    #email,
+    #password,
+    #first-name,
+    #last-name,
+    #date-of-birth {
+        width: 100%;
+    }
+
+    .other {
+        display: flex;
+        flex-direction: column;
+    }
+
 }
