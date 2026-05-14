@@ -251,6 +251,36 @@ header.active {
     color: var(--main-text);
 }
 
+.sidebar-socials p {
+    border: 2px solid var(--secondary-border);
+    border-radius: 15px;
+    width: 100px;
+    cursor: pointer;
+    transition: 0.5s;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px;
+    color: var(--main-text);
+    display: none;
+}
+
+.sidebar-socials a {
+    color: var(--main-text);
+    text-decoration: none;
+    display: none;
+}
+
+.sidebar-socials a:visited {
+    color: var(--main-text);
+    text-decoration: none;
+}
+
+.sidebar-socials p:hover {
+    background-color: var(--accent);
+    color: var(--bg);
+    border: 2px solid var(--accent);
+}
+
 /* MAIN CONTENT SECTION */
 
 .main-content {
@@ -519,6 +549,11 @@ header.active {
 
     .right-side {
         display: none;
+    }
+
+    .sidebar-socials a,
+    .sidebar-socials p {
+        display: flex;
     }
 
     .portion1 {
