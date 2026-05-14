@@ -282,6 +282,19 @@ header.active {
     border: 2px solid var(--accent);
 }
 
+.learn-tab a {
+    text-decoration: none;
+    color: var(--secondary-text);
+}
+
+.learn-tab a:visited {
+    text-decoration: none;
+    color: var(--secondary-text);
+}
+
+.learn-tab a:hover {
+    color: var(--main-text);
+}
 
 /* MAIN CONTENT SECTION */
 .main-content {
