@@ -509,8 +509,8 @@ header.active {
     }
 
     header.active {
-        left: 250px;
-        width: calc(100% - 250px);
+        left: 300px;
+        width: calc(100% - 300px);
     }
 
     .search-bar {
