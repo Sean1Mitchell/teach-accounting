@@ -462,6 +462,11 @@ header.active {
         font-size: 14px;
     }
 
+    .lesson-grid.active {
+        display: flex;
+        flex-direction: column;
+    }
+
     .lesson-card p {
         font-size: 14px;
     }
