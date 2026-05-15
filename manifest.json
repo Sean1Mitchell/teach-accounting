@@ -1,6 +1,6 @@
 {
   "name": "Teach Accounting",
-  "short_name": "TA",
+  "short_name": "Teach Accounting",
   "icons": [
     {
       "src": "ICONS/icon-48x48.png",
@@ -53,9 +53,9 @@
       "type": "image/png"
     }
   ],
-  "start_url": "/",
-  "scope": "/",
+  "start_url": "/teach-accounting/",
+  "scope": "/teach-accounting/",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#000000"
+  "background_color": "#0f172a",
+  "theme_color": "#0f172a"
 }
