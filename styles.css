@@ -252,7 +252,8 @@ header.active {
     color: var(--main-text);
 }
 
-.sidebar-socials p {
+.sidebar-socials a {
+    display: none;
     border: 2px solid var(--secondary-border);
     border-radius: 15px;
     width: 100px;
@@ -261,14 +262,8 @@ header.active {
     text-decoration: none;
     font-weight: bold;
     padding: 5px;
+    padding-left: 7px;
     color: var(--main-text);
-    display: none;
-}
-
-.sidebar-socials a {
-    color: var(--main-text);
-    text-decoration: none;
-    display: none;
 }
 
 .sidebar-socials a:visited {
@@ -276,7 +271,7 @@ header.active {
     text-decoration: none;
 }
 
-.sidebar-socials p:hover {
+.sidebar-socials a:hover {
     background-color: var(--accent);
     color: var(--bg);
     border: 2px solid var(--accent);
@@ -566,8 +561,7 @@ header.active {
         display: none;
     }
 
-    .sidebar-socials a,
-    .sidebar-socials p {
+    .sidebar-socials a {
         display: flex;
     }
 

@@ -252,7 +252,8 @@ header.active {
     color: var(--main-text);
 }
 
-.sidebar-socials p {
+.sidebar-socials a {
+    display: none;
     border: 2px solid var(--secondary-border);
     border-radius: 15px;
     width: 100px;
@@ -261,25 +262,13 @@ header.active {
     text-decoration: none;
     font-weight: bold;
     padding: 5px;
+    padding-left: 7px;
     color: var(--main-text);
-    display: none;
-}
-
-.sidebar-socials a {
-    color: var(--main-text);
-    text-decoration: none;
-    display: none;
 }
 
 .sidebar-socials a:visited {
     color: var(--main-text);
     text-decoration: none;
-}
-
-.sidebar-socials p:hover {
-    background-color: var(--accent);
-    color: var(--bg);
-    border: 2px solid var(--accent);
 }
 
 .learn-tab a {
@@ -309,4 +298,114 @@ header.active {
 .main-content svg {
     width: 20px;
     height: 20px;
+}
+
+.achievements {
+    color: var(--accent);
+}
+
+.description {
+    color: var(--third-text);
+}
+
+.achievements-dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
+    justify-content: space-around;
+    padding-top: 30px;
+}
+
+.achievements-dashboard div {
+    border: 2px solid var(--border);
+    border-radius: 15px;
+    background: var(--secondary-bg);
+    padding: 10px;
+    color: var(--main-text);
+}
+
+.achievements-dashboard svg {
+    height: 30px;
+    width: 30px;
+}
+
+.XP h2 {
+    height: 30px;
+    width: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+.section3 {
+    color: var(--main-text);
+    padding-top: 30px;
+}
+
+.section4 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(430px, 430px));
+    justify-content: center;
+    gap: 10px;
+}
+
+.section4 svg {
+    color: var(--accent);
+    height: 25px;
+    width: 25px;
+    margin: 12px 20px 0 0;
+}
+
+.badge {
+    border: 2px solid var(--border);
+    border-radius: 15px;
+    background: var(--elevated-bg);
+    padding: 0 20px 0 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.badge h2 {
+    color: var(--main-text);
+    margin: 0;
+    padding: 7px 0 7px 0;
+    font-size: 14px;
+}
+
+.badge p {
+    color: var(--third-text);
+    margin: 0;
+    padding: 0 0 7px 0;
+    font-size: 12px;
+}
+
+@media (max-width: 600px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    header.active {
+        left: 300px;
+        width: calc(100% - 300px);
+    }
+
+    .search-bar {
+        width: 100%;
+    }
+
+    .right-side {
+        display: none;
+    }
+
+    .sidebar-socials a {
+        display: flex;
+    }
+
+    .section4 {
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    }
+
+    .achievements-dashboard {
+        gap: 15px;
+    }
 }
